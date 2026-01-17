@@ -25,6 +25,13 @@ While Open Cowork offers a similar collaborative AI experience to Claude cowork,
 - **📖 100% Open Source**: Complete source code available, enabling transparency, customization, and community-driven improvements without vendor lock-in.
 - **⚙️ No Dependency on Claude Code**: Built from the ground up with independent architecture, Open Cowork does not require Claude Code as an underlying dependency, providing more flexibility and control.
 
+## Quick start
+
+You can access https://agiagentonline.com/opencoworker to try on Cloud
+backup address http://156.238.255.79:5002
+You can login in Guest account with empty API key to see demos.
+You can also login with your phone number to start a new task.
+
 ## GUI for Vibe Everything
 
 ![GUI](./md/images/OpenCowork_GUI.png)
@@ -304,12 +311,6 @@ Supports Model Context Protocol (MCP) for communication with external tool serve
 - 📁 File system, GitHub, Slack, and other service integrations
 - ⚡ Dynamic tool discovery and registration
 
-## Quick start
-
-You can access https://agiagentonline.com/opencoworker to try on Cloud
-backup address http://156.238.255.79:5002
-You can login in Guest account with empty API key to see demos.
-You can also login with your phone number to start a new task.
 
 ## Contact Us
 You can submit questions or suggestions by opening an Issue. For further communication, you can email us at bitcursor@2925.com

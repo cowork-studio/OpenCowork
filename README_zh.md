@@ -27,6 +27,12 @@
 - **📖 100% 开源**：提供完整的源代码，实现透明度、可定制性和社区驱动的改进，无供应商锁定。
 - **⚙️ 无需 Claude Code 作为底层**：从零开始构建的独立架构，Open Cowork 不需要 Claude Code 作为底层依赖，提供更大的灵活性和控制权。
 
+## 🚀 快速开始
+您可以访问 https://agiagentonline.com/opencoworker 试用！ 
+备用地址 http://156.238.255.79:5002
+您可以使用空的 API key 以游客身份登录并体验演示功能。
+您也可以通过手机号登录，开始新的任务。
+
 ## GUI for Vibe Everything
 
 ![GUI](./md/images/OpenCowork_GUI.png)
@@ -307,12 +313,6 @@ Open Cowork 现在支持在代码中直接作为 Python 库调用，提供类似
 - 🔧 支持官方和第三方 MCP 服务器
 - 📁 文件系统、GitHub、Slack 等服务集成
 - ⚡ 动态工具发现和注册
-
-## 🚀 快速开始
-您可以访问 https://agiagentonline.com/opencoworker 试用！ 
-备用地址 http://156.238.255.79:5002
-您可以使用空的 API key 以游客身份登录并体验演示功能。
-您也可以通过手机号登录，开始新的任务。
 
 ## 联系我们
 您可以通过提交 Issue 来提交问题或建议。如需进一步沟通，您可以发送邮件至 bitcursor@2925.com
