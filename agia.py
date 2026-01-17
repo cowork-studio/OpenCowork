@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@ limitations under the License.
 """
 
 """
-OpenCowork Command Line Interface
+OfficeCowork Command Line Interface
 
-This file provides the command line interface for OpenCowork.
+This file provides the command line interface for OfficeCowork.
 All source code has been moved to the src/ directory.
 """
 
@@ -55,11 +55,11 @@ def custom_excepthook(exc_type, exc_value, exc_traceback):
 sys.excepthook = custom_excepthook
 
 # Application name macro definition
-APP_NAME = "OpenCowork"
+APP_NAME = "OfficeCowork"
 
 from src.tools.print_system import print_current
 from src.tools.debug_system import install_debug_system
-from src.main import OpenCoworkMain
+from src.main import OfficeCoworkMain
 
 import argparse
 import json
@@ -171,7 +171,7 @@ def should_show_banner():
     return False
 
 def print_ascii_banner():
-    """Print ASCII art banner for OpenCowork (only if appropriate environment)"""
+    """Print ASCII art banner for OfficeCowork (only if appropriate environment)"""
     if not should_show_banner():
         return
     
@@ -346,7 +346,7 @@ Usage Examples:
   python cowork.py --continue "Continue working on the previous task"
   python cowork.py -c --requirement "Add new features to existing project"
   
-  # Link to external code directory - OpenCowork will operate on external code
+  # Link to external code directory - OfficeCowork will operate on external code
   python cowork.py --link-dir /path/to/your/project "Add new features to the project"
   python cowork.py --link-dir ./my_project --dir output_folder "Refactor the codebase"
   
@@ -458,7 +458,7 @@ Usage Examples:
     parser.add_argument(
         "--link-dir",
         default=None,
-        help="Link to external code directory. Creates a symbolic link in workspace directory pointing to the specified path, allowing OpenCowork to manipulate external code projects."
+        help="Link to external code directory. Creates a symbolic link in workspace directory pointing to the specified path, allowing OfficeCowork to manipulate external code projects."
     )
     
     parser.add_argument(
@@ -587,7 +587,7 @@ Usage Examples:
     
     # Create and run main program
     try:
-        main_app = OpenCoworkMain(
+        main_app = OfficeCoworkMain(
             out_dir=args.dir,
             api_key=api_key,
             model=args.model,

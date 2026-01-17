@@ -1,4 +1,4 @@
-# OpenCowork Installation Guide
+# OfficeCowork Installation Guide
 
 ## Automatic Installation (Recommended)
 
@@ -8,7 +8,7 @@ We provide an automated installation script that supports both Linux and macOS s
 
 ```bash
 # Navigate to the project directory
-cd /path/to/OpenCowork
+cd /path/to/OfficeCowork
 
 # Run the installation script
 ./install.sh
@@ -167,7 +167,7 @@ brew install --cask mactex
 xelatex --version
 
 # Optional: Run package check script
-cd /path/to/OpenCowork
+cd /path/to/OfficeCowork
 ./check_latex_packages.sh
 ```
 

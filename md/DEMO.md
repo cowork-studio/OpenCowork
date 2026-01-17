@@ -1,6 +1,6 @@
-# OpenCowork Demo Cases
+# OfficeCowork Demo Cases
 
-This document showcases the capabilities of OpenCowork across various task scenarios. Each case contains specific task descriptions and generated output files.
+This document showcases the capabilities of OfficeCowork across various task scenarios. Each case contains specific task descriptions and generated output files.
 
 all the examples can be found at: 
 https://drive.google.com/drive/folders/14SwKNCCUYWODzxjb-DdCzeHo0VdYTSt9?usp=sharing

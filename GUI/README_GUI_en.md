@@ -1,6 +1,6 @@
-# OpenCowork GUI
+# OfficeCowork GUI
 
-Graphical user interface for OpenCowork, providing intuitive and convenient task execution and file management functions.
+Graphical user interface for OfficeCowork, providing intuitive and convenient task execution and file management functions.
 
 ## 🚀 Quick Start
 ### please add your LLM API in config/config.txt
@@ -24,14 +24,14 @@ After task execution is completed or interrupted, you can continue the task by s
 ## 🔐 User Authentication & Multi-User Management
 
 ### Login Method
-OpenCowork GUI uses API Key authentication:
+OfficeCowork GUI uses API Key authentication:
 1. After starting the GUI, first-time access will require entering an API Key
 2. Enter a valid API Key to log in and use the system
 3. API Key remains valid during the browser session, requires re-entry after closing browser
 
 ### Default Account
 The system comes with the following test accounts:
-- **username**: `OpenCoworktest`，**API Key**: `agiatest`
+- **username**: `OfficeCoworktest`，**API Key**: `agiatest`
 - **username**: `guest`，**API Key**: ``（no content） 
 Guest account is for preview (not editable and not able to run new task).
 > ⚠️ **Security Notice**: In production environments, please modify or delete default accounts promptly and create dedicated secure accounts.

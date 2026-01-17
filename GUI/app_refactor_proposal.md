@@ -82,7 +82,7 @@ def switch_app(self, app_name: Optional[str], session_id: Optional[str] = None):
         if self.app_manager.is_app_mode():
             APP_NAME = self.app_manager.get_app_name()
         else:
-            APP_NAME = "OpenCowork"
+            APP_NAME = "OfficeCowork"
         
         # 更新环境变量（向后兼容）
         if app_name:

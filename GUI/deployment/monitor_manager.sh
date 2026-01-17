@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenCowork GUI 多应用监控管理脚本
+# OfficeCowork GUI 多应用监控管理脚本
 # 提供统一的管理接口，方便启动、停止、查看状态等操作
 
 # 获取脚本所在目录
@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 
 # 显示使用说明
 show_usage() {
-    echo "OpenCowork GUI 多应用监控管理脚本"
+    echo "OfficeCowork GUI 多应用监控管理脚本"
     echo ""
     echo "用法: $0 [命令]"
     echo ""

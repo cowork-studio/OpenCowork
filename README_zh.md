@@ -1,43 +1,44 @@
-# Open Cowork
+# Claude Cowork for Office
 
-> 通用的本地 AI 智能体平台，支持 Vibe 文档、Vibe 编程和通用任务执行。类似 Claude cowork，完全可本地化，支持通用模型。
+> 面向办公任务的本地 AI 智能体平台，专为专业文档写作、文献调研、代码编写等办公场景优化。类似 Claude cowork，完全可本地化，支持通用模型。
 
 [**English**](README.md)
 
 ## 🚀 项目介绍
-**Open Cowork** 是一个通用的智能体平台，可以实现氛围文档撰写（Vibe Doc）、Vibe Coding和基于自然语言的通用任务执行。
-类似于 Claude cowork，Open Cowork 是一个通用化的本地智能体操作系统，能够自主操作您的计算机，通过自然语言交互处理复杂任务。平台包含 20+ 内置工具和许多例程文件（skills），适用于广泛的使用场景。Open Cowork 擅长创建带有丰富图表的专业文档，并可以直接在 GUI 中预览和编辑文档。也可以用它编写程序，支持多轮交互、拖放文件等（@files）。
+**Claude Cowork for Office** 是一个专为办公任务优化的智能体平台，特别擅长专业文档写作、文献调研和代码编写等办公场景。
+类似于 Claude cowork，Claude Cowork for Office 是一个面向办公任务的本地智能体操作系统，能够自主操作您的计算机，通过自然语言交互处理复杂任务。平台针对办公场景进行了深度优化，包含 20+ 内置工具和许多例程文件（skills），特别适用于专业文档撰写、学术研究、技术报告编写、代码开发等办公任务。Claude Cowork for Office 擅长创建带有丰富图表的专业文档，并可以直接在 GUI 中预览和编辑文档。也可以用它编写程序，支持多轮交互、拖放文件等（@files）。
 提供 GUI 和 CLI 、嵌入式运行等模式，可以部署在云端、笔记本电脑或嵌入式设备（ARM）上。支持Anthropic/OpenAI大模型接口，支持开源/私有化部署。
 
 ### 🤔 这款软件适合您吗？
 
-- **正在寻找开源的 Claude cowork？** Open Cowork 提供类似的协作式 AI 体验，让您能够与智能体协作，智能体可以理解您的需求、操作本地环境并自主执行复杂任务。
-- **需要通用化的本地智能体？** 如果您想要一个能够在本地机器上处理多样化任务的智能体系统——从代码编写到文档生成，从数据分析到系统操作——Open Cowork 正是为您设计的。
-- **编写复杂的专业文档？** 如果您需要创建带有丰富插图、复杂的专业报告，如学术论文、深度研究或专利，Open Cowork 表现的表现会让你满意;
-- **寻求可本地部署的代理？** 如果您想要一个支持本地部署且兼容各种 Anthropic/OpenAI 接口模型的代理系统，这可能是您的解决方案;
-- **Vibe 爱好者？** 如果您热衷于 Vibe 工作流程，您会喜欢 Open Cowork。
+- **正在寻找开源的 Claude cowork？** Claude Cowork for Office 提供类似的协作式 AI 体验，让您能够与智能体协作，智能体可以理解您的需求、操作本地环境并自主执行复杂任务。
+- **需要专业的办公智能体？** 如果您需要一个专门为办公任务优化的智能体系统——从专业文档写作到文献调研，从代码编写到技术报告——Claude Cowork for Office 正是为您设计的。
+- **编写复杂的专业文档？** 如果您需要创建带有丰富插图、复杂的专业报告，如学术论文、深度研究或专利，Claude Cowork for Office 的表现会让您满意。
+- **进行文献调研和研究？** 如果您需要进行学术研究、文献综述或技术调研，Claude Cowork for Office 可以帮助您收集信息、分析资料并生成专业报告。
+- **寻求可本地部署的代理？** 如果您想要一个支持本地部署且兼容各种 Anthropic/OpenAI 接口模型的代理系统，这可能是您的解决方案。
 
 ### 🆚 与 Claude Cowork 的对比
 
-虽然 Open Cowork 提供与 Claude cowork 类似的协作式 AI 体验，但它具有以下关键优势：
+虽然 Claude Cowork for Office 提供与 Claude cowork 类似的协作式 AI 体验，但它具有以下关键优势：
 
-- **🏠 完全可本地化**：Open Cowork 可以完全安装在您的本地机器上运行，让您完全控制自己的数据和环境，无需依赖云服务。
-- **🔌 通用模型支持**：与 Claude cowork 仅限于 Claude 模型不同，Open Cowork 支持任何主流大语言模型，包括 Claude、GPT-4、DeepSeek V3、Kimi K2、GLM、Qwen 等，通过标准的 Anthropic/OpenAI API 接口接入。
-- **💻 跨平台兼容性**：完全支持 Windows、Linux 和 macOS，让您可以在任何您喜欢的操作系统上使用 Open Cowork。
+- **🏠 完全可本地化**：Claude Cowork for Office 可以完全安装在您的本地机器上运行，让您完全控制自己的数据和环境，无需依赖云服务。
+- **🔌 通用模型支持**：与 Claude cowork 仅限于 Claude 模型不同，Claude Cowork for Office 支持任何主流大语言模型，包括 Claude、GPT-4、DeepSeek V3、Kimi K2、GLM、Qwen 等，通过标准的 Anthropic/OpenAI API 接口接入。
+- **💻 跨平台兼容性**：完全支持 Windows、Linux 和 macOS，让您可以在任何您喜欢的操作系统上使用 Claude Cowork for Office。
 - **📖 100% 开源**：提供完整的源代码，实现透明度、可定制性和社区驱动的改进，无供应商锁定。
-- **⚙️ 无需 Claude Code 作为底层**：从零开始构建的独立架构，Open Cowork 不需要 Claude Code 作为底层依赖，提供更大的灵活性和控制权。
+- **⚙️ 无需 Claude Code 作为底层**：从零开始构建的独立架构，Claude Cowork for Office 不需要 Claude Code 作为底层依赖，提供更大的灵活性和控制权。
+- **📝 办公任务优化**：专门针对专业文档写作、文献调研、代码编写等办公场景进行优化，提供更专业的输出质量。
 
 ## 🚀 快速开始
-您可以访问 https://agiagentonline.com/opencowork 试用！ 
+您可以访问 https://agiagentonline.com/OfficeCowork 试用！ 
 备用地址 http://156.238.255.79:5002
 您可以使用空的 API key 以游客身份登录并体验演示功能。
 您也可以通过手机号登录，开始新的任务。
 
-## GUI for Vibe Everything
+## GUI for Vibe Office
 
-![GUI](./md/images/OpenCowork_GUI.png)
+![GUI](./md/images/OfficeCowork_GUI.png)
 
-**Open Cowork** 遵循基于计划的 ReAct 模型来执行复杂任务。它采用多轮迭代工作机制，大模型可以在每一轮中调用工具并接收反馈结果。它用于根据用户需求更新工作区中的文件或通过工具改变外部环境。Open Cowork 可以自主调用各种 MCP 工具和操作系统工具，具有多代理协作、多级长期记忆和具身智能感知功能。它强调代理的通用性和自主决策能力。Open Cowork 广泛的操作系统支持、大模型支持和多种操作模式使其适合构建类人通用智能系统，以实现复杂的报告研究和生成、项目级代码编写、自动计算机操作、多代理研究（如竞争、辩论、协作）等应用。
+**Claude Cowork for Office** 遵循基于计划的 ReAct 模型来执行复杂任务。它采用多轮迭代工作机制，大模型可以在每一轮中调用工具并接收反馈结果。它用于根据用户需求更新工作区中的文件或通过工具改变外部环境。Claude Cowork for Office 可以自主调用各种 MCP 工具和操作系统工具，具有多代理协作、多级长期记忆和具身智能感知功能。它强调代理的通用性和自主决策能力。Claude Cowork for Office 广泛的操作系统支持、大模型支持和多种操作模式使其特别适合办公场景，包括复杂的报告研究和生成、项目级代码编写、文献调研、专业文档撰写等应用。
 
 
 
@@ -98,6 +99,7 @@ python cowork.py --api-key YOUR_KEY --model gpt-4 --api-base https://api.openai.
 
 ## 🎯 核心功能
 
+### 通用功能
 - **🧠 智能任务分解**：AI 自动将复杂需求分解为可执行的子任务
 - **🔄 多轮迭代执行**：每个任务支持多轮优化以确保质量（默认 50 轮）
 - **🔍 智能代码搜索**：语义搜索 + 关键词搜索，快速定位代码
@@ -112,9 +114,19 @@ python cowork.py --api-key YOUR_KEY --model gpt-4 --api-base https://api.openai.
 - **🤝 交互式控制**：可选的用户确认模式，逐步控制
 - **📁 灵活输出**：自定义输出目录，新项目自动时间戳命名
 
+### 📝 专业文档撰写优势（来自 ColorDoc）
+
+- **🖼️ 丰富图文报告生成**：支持多种图像格式自动插入（Mermaid 图、SVG 图、谷歌/百度搜图、AI 生图、代码生图），大模型可直接输出图文混合排版格式，让文档告别枯燥无味
+- **📄 长文档生成能力**：一次生成完整的报告、申请书、论文、专利等，可达到 30-50 页篇幅，无需分段处理
+- **✍️ 优雅专业的文字风格**：类似论文和深度报告的文体，不像普通大模型那样只列观点不写细节，写作更专业更拟人，适合深度写作应用
+- **🛠️ 内置编辑器支持**：内建支持 SVG 图编辑器、Mermaid 源码编辑器、Markdown 编辑器及预览器，搜到的图像可一键更换，使得图文文档编辑更容易
+- **📑 多格式输出支持**：支持输出 Markdown、Word、PDF、LaTeX 等多种文档格式，尤其是 LaTeX 格式，写论文党的必备
+- **🎨 高质量图像输出**：为了提供高质量出版物所需的矢量图，并实现兼容性，生成的图像同时提供 SVG 图和 PNG 图，Markdown 和 PDF 支持 SVG 图像格式，Word 默认采用 PNG 格式
+- **📋 丰富的写作模板**：提供了 10 余个写作模板，包括写报告、写国家项目申请书、写标书技术应标稿、写博客、写丰富图片文档、写专利交底书、给文档配图等，风格多样
+
 ## 🛠️ 工具集
 
-Open Cowork 提供了丰富的工具集，分为**常规工具集**和**扩展工具集**两大类。常规工具集默认可用，扩展工具集需要手动启用。
+Claude Cowork for Office 提供了丰富的工具集，分为**常规工具集**和**扩展工具集**两大类。常规工具集默认可用，扩展工具集需要手动启用。
 
 ### 常规工具集
 
@@ -168,7 +180,7 @@ Open Cowork 提供了丰富的工具集，分为**常规工具集**和**扩展�
 3. 复制该工具的完整 JSON 定义（包括工具名称和所有内容）
 4. 打开 `prompts/tool_prompt.json` 文件
 5. 将复制的工具定义添加到 JSON 对象中（注意保持 JSON 格式正确，添加逗号分隔符）
-6. 保存文件并重启 Open Cowork
+6. 保存文件并重启 Claude Cowork for Office
 
 **示例**：启用 `file_search` 工具
 
@@ -184,7 +196,7 @@ Open Cowork 提供了丰富的工具集，分为**常规工具集**和**扩展�
 
 ## 📋 典型 Routine（任务模板）
 
-Open Cowork 在 `routine/` 目录下提供了丰富的任务模板（Routine），这些模板定义了不同类型任务的标准工作流程和质量要求。您可以直接使用这些模板，或根据需求自定义：
+Claude Cowork for Office 在 `routine/` 目录下提供了丰富的任务模板（Routine），这些模板定义了不同类型任务的标准工作流程和质量要求。您可以直接使用这些模板，或根据需求自定义：
 
 ### 📝 文档撰写类
 
@@ -233,7 +245,7 @@ Routine 文件定义了任务的标准流程、质量要求和输出格式，帮
 
 ## 🤖 模型选择
 
-Open Cowork 支持各种主流 AI 模型，包括 Claude、GPT-4、DeepSeek V3、Kimi K2 等，满足不同用户需求和预算。支持流式/非流式、工具调用或基于聊天的工具接口、Anthropic/OpenAI API 兼容性。
+Claude Cowork for Office 支持各种主流 AI 模型，包括 Claude、GPT-4、DeepSeek V3、Kimi K2 等，满足不同用户需求和预算。支持流式/非流式、工具调用或基于聊天的工具接口、Anthropic/OpenAI API 兼容性。
 
 
 **🎯 [查看详细模型选择指南 →](md/MODELS.md)**
@@ -248,7 +260,7 @@ Open Cowork 支持各种主流 AI 模型，包括 Claude、GPT-4、DeepSeek V3�
 
 ## ⚙️ 配置文件
 
-Open Cowork 使用 `config/config.txt` 和 `config/config_memory.txt` 文件进行系统配置。
+Claude Cowork for Office 使用 `config/config.txt` 和 `config/config_memory.txt` 文件进行系统配置。
 
 ### 快速配置
 安装后，请配置以下基本选项：
@@ -287,7 +299,7 @@ playwright install chromium
 
 ## ⚠️ 安全提示
 
-作为通用任务代理，Open Cowork 具有调用系统终端命令的能力。虽然它通常不会在工作目录外操作文件，但大模型可能会执行软件安装命令（如 pip、apt 等）。使用时请注意：
+作为通用任务代理，Claude Cowork for Office 具有调用系统终端命令的能力。虽然它通常不会在工作目录外操作文件，但大模型可能会执行软件安装命令（如 pip、apt 等）。使用时请注意：
 - 仔细审查执行的命令
 - 建议在沙箱环境中运行重要任务
 - 定期备份重要数据
@@ -295,7 +307,7 @@ playwright install chromium
 ## 🔗 扩展功能
 
 ### 🐍 Python 库接口
-Open Cowork 现在支持在代码中直接作为 Python 库调用，提供类似于 OpenAI Chat API 的编程接口。
+Claude Cowork for Office 现在支持在代码中直接作为 Python 库调用，提供类似于 OpenAI Chat API 的编程接口。
 
 **📖 [查看 Python 库使用指南 →](md/README_python_lib_zh.md)**
 

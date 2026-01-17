@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-OpenCowork - AI-powered intelligent code generation and autonomous task execution system
+OfficeCowork - AI-powered intelligent code generation and autonomous task execution system
 
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 Licensed under the Apache License, Version 2.0
 
 For explicit imports, use:
-    from src.main import OpenCoworkClient, create_client, OpenCoworkMain
+    from src.main import OfficeCoworkClient, create_client, OfficeCoworkMain
     from src.config_loader import load_config
     from src.tool_executor import ToolExecutor
 """
@@ -16,15 +16,15 @@ For explicit imports, use:
 # Users should import explicitly from submodules as needed
 
 __version__ = "1.2.0"
-__author__ = "OpenCowork Team"
+__author__ = "OfficeCowork Team"
 __email__ = "contact@agia.ai"
 __description__ = "AI Code Auto-Generator - Intelligent code generation and task execution system based on Claude Sonnet"
 
 # Public API
 __all__ = [
-    'OpenCoworkClient',
+    'OfficeCoworkClient',
     'create_client', 
-    'OpenCoworkMain',
+    'OfficeCoworkMain',
     '__version__',
     '__author__',
     '__email__',

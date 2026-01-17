@@ -1,4 +1,4 @@
-# OpenCowork 安装指南
+# OfficeCowork 安装指南
 
 ## 自动安装（推荐）
 
@@ -8,7 +8,7 @@
 
 ```bash
 # 进入项目目录
-cd /path/to/OpenCowork
+cd /path/to/OfficeCowork
 
 # 运行安装脚本
 ./install.sh
@@ -167,7 +167,7 @@ brew install --cask mactex
 xelatex --version
 
 # 可选：运行包检查脚本
-cd /path/to/OpenCowork
+cd /path/to/OfficeCowork
 ./check_latex_packages.sh
 ```
 

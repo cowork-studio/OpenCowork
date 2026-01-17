@@ -2,14 +2,14 @@
 
 ## 概述
 
-OpenCowork 的 PDF 转换功能需要多个 LaTeX 包。本文档提供一次性安装所有必需包的完整方案。
+OfficeCowork 的 PDF 转换功能需要多个 LaTeX 包。本文档提供一次性安装所有必需包的完整方案。
 
 ## 快速安装（推荐）
 
 ### 方法 1：使用自动安装脚本
 
 ```bash
-cd /Users/zhenzhiwu/OpenCowork
+cd /Users/zhenzhiwu/OfficeCowork
 bash md/install_all_latex_packages.sh
 ```
 

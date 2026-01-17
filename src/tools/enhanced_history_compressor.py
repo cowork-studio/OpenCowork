@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Enhanced History Compressor - Direct record deletion compression:
 1. When history exceeds trigger_length, compress to target_length (preserve last N rounds)

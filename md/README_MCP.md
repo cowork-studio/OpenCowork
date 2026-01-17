@@ -1,6 +1,6 @@
-# OpenCowork MCP (Model Context Protocol) Support
+# OfficeCowork MCP (Model Context Protocol) Support
 
-OpenCowork now supports the MCP (Model Context Protocol) protocol, enabling communication with external tool servers and greatly expanding the system's tool ecosystem.
+OfficeCowork now supports the MCP (Model Context Protocol) protocol, enabling communication with external tool servers and greatly expanding the system's tool ecosystem.
 
 ## 🌟 Features
 
@@ -72,7 +72,7 @@ config/mcp_servers.json
 ```
 
 ### 2. Using MCP Tools
-In OpenCowork, MCP tools are called using the format `server_name:tool_name`:
+In OfficeCowork, MCP tools are called using the format `server_name:tool_name`:
 
 ```python
 # Call filesystem tool
@@ -267,7 +267,7 @@ if __name__ == "__main__":
 - Verify file path access permissions
 
 ### Debug Mode
-OpenCowork supports detailed debug logging to help diagnose MCP-related issues:
+OfficeCowork supports detailed debug logging to help diagnose MCP-related issues:
 
 ```python
 # Enable debug mode
@@ -286,4 +286,4 @@ Contributions of new MCP server integrations or improvements to existing functio
 
 ## 📄 License
 
-This feature follows the license terms of the OpenCowork project. 
+This feature follows the license terms of the OfficeCowork project. 

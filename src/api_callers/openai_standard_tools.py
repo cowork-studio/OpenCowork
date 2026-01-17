@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -425,7 +425,7 @@ def call_openai_with_standard_tools(executor, messages, system_message):
                 
                 print_current(f"⚠️ OpenAI API {matched_error_keyword} error (attempt {attempt + 1}/{max_retries + 1}): {e}")
                 print_current(f"💡 Consider switching to a different model or trying again later")
-                print_current(f"🔄 You can change the model in config.txt and restart OpenCowork")
+                print_current(f"🔄 You can change the model in config.txt and restart OfficeCowork")
                 print_current(f"🔄 Retrying in {retry_delay} seconds...")
                 
                 # Wait before retry
@@ -437,7 +437,7 @@ def call_openai_with_standard_tools(executor, messages, system_message):
                 if is_retryable:
                     print_current(f"❌ OpenAI API {matched_error_keyword} error: Maximum retries ({max_retries}) exceeded")
                     print_current(f"💡 Consider switching to a different model or trying again later")
-                    print_current(f"🔄 You can change the model in config.txt and restart OpenCowork")
+                    print_current(f"🔄 You can change the model in config.txt and restart OfficeCowork")
                 else:
                     print_current(f"❌ OpenAI API call failed: {e}")
                 

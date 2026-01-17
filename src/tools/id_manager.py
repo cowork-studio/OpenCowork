@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from .print_system import print_system, print_current
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-OpenCowork ID Manager
+OfficeCowork ID Manager
 Provides sequential ID generation as an alternative to random UUIDs
 """
 

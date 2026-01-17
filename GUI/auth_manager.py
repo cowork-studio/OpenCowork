@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-GUI Authentication Manager for OpenCowork
+GUI Authentication Manager for OfficeCowork
 Provides secure API key authentication with SHA-256 hashing
 """
 
@@ -52,7 +52,7 @@ class AuthenticationManager:
         """Initialize authorized keys file with default structure"""
         if not os.path.exists(self.authorized_keys_file):
             default_config = {
-                "description": "Authorized API keys for OpenCowork GUI access",
+                "description": "Authorized API keys for OfficeCowork GUI access",
                 "version": "1.0",
                 "keys": [
                     {
@@ -483,7 +483,7 @@ def main():
     """CLI interface for managing authorized keys"""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Manage OpenCowork GUI authorized keys")
+    parser = argparse.ArgumentParser(description="Manage OfficeCowork GUI authorized keys")
     parser.add_argument("--config-dir", default="config", help="Configuration directory")
     
     subparsers = parser.add_subparsers(dest="command", help="Available commands")

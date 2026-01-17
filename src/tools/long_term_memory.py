@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 Long-term Memory Management Module
-Implements OpenCowork's long-term memory functionality based on the mem project architecture.
+Implements OfficeCowork's long-term memory functionality based on the mem project architecture.
 """
 
 import os
@@ -54,7 +54,7 @@ except ImportError as e:
 class LongTermMemoryManager:
     """
     Long-term Memory Manager
-    Integrates mem project's memory management into OpenCowork
+    Integrates mem project's memory management into OfficeCowork
     """
 
     def __init__(self, workspace_root: str, memory_config_file: str = None):
@@ -68,8 +68,8 @@ class LongTermMemoryManager:
         self.workspace_root = workspace_root
 
         # Store long-term memory in the project root for global sharing
-        # Get project root (OpenCowork directory)
-        # From src/tools/long_term_memory.py -> OpenCowork/
+        # Get project root (OfficeCowork directory)
+        # From src/tools/long_term_memory.py -> OfficeCowork/
         current_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(os.path.dirname(current_dir))
         self.memory_dir = os.path.join(project_root, "long_term_memory")
@@ -77,7 +77,7 @@ class LongTermMemoryManager:
 
         # Set memory config file path
         if memory_config_file is None:
-            # Use OpenCowork's config_memory.txt file
+            # Use OfficeCowork's config_memory.txt file
             memory_config_file = os.path.join(project_root, "config", "config_memory.txt")
             # Fallback to config.txt if config_memory.txt does not exist
             if not os.path.exists(memory_config_file):

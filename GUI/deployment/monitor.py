@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -332,7 +332,7 @@ class MultiAppMonitor:
     def run(self):
         """启动所有应用的监控"""
         self.logger.info("=" * 60)
-        self.logger.info("OpenCowork GUI 多应用监控程序启动")
+        self.logger.info("OfficeCowork GUI 多应用监控程序启动")
         self.logger.info(f"共监控 {len(self.app_instances)} 个应用")
         self.logger.info("=" * 60)
         
@@ -364,7 +364,7 @@ class MultiAppMonitor:
 
 def main():
     """主函数"""
-    print("OpenCowork GUI 多应用监控程序")
+    print("OfficeCowork GUI 多应用监控程序")
     print("=" * 60)
     print("此程序将监控多个 GUI/app.py 实例")
     print("每个实例使用不同的端口和应用名称")

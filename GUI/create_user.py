@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-OpenCowork GUI User Management Script
+OfficeCowork GUI User Management Script
 Simple command-line tool for creating and managing GUI users
 """
 
@@ -32,7 +32,7 @@ from auth_manager import AuthenticationManager
 
 def create_user_interactive():
     """Interactive user creation"""
-    print("=== OpenCowork GUI - User Creation Wizard ===\n")
+    print("=== OfficeCowork GUI - User Creation Wizard ===\n")
     
     # Initialize auth manager (find config dir relative to script location)
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -215,7 +215,7 @@ def list_users():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="OpenCowork GUI User Management Tool",
+        description="OfficeCowork GUI User Management Tool",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Usage examples:

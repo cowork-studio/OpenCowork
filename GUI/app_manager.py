@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -79,7 +79,7 @@ class AppManager:
             # 如果 app_title 不存在，使用 app_name
             if 'app_name' in self.app_config:
                 return self.app_config['app_name']
-        return "OpenCowork"  # 默认名称
+        return "OfficeCowork"  # 默认名称
     
     def get_prompts_folder(self, user_dir: Optional[str] = None) -> Optional[str]:
         """

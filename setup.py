@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@ limitations under the License.
 """
 
 """
-OpenCowork project installation script
+OfficeCowork project installation script
 """
 
 # Application name macro definition
-APP_NAME = "OpenCowork"
+APP_NAME = "OfficeCowork"
 
 from setuptools import setup, find_packages
 
@@ -29,10 +29,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="OpenCowork",
+    name="OfficeCowork",
     version="1.2.0",
     author=f"{APP_NAME} Team",
-    description="OpenCowork for general purposed task execution",
+    description="OfficeCowork for general purposed task execution",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/agia/agia",

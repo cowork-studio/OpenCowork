@@ -1,8 +1,8 @@
-# OpenCowork Python Library Interface
+# OfficeCowork Python Library Interface
 
 > **⚠️ 实验性功能**: Python库接口目前为实验性功能，API可能会在未来版本中发生变化。建议在生产环境中谨慎使用。
 
-OpenCowork现在支持作为Python库使用，提供类似OpenAI Chat API的编程接口。你可以直接在Python代码中调用OpenCowork，而不需要通过命令行。
+OfficeCowork现在支持作为Python库使用，提供类似OpenAI Chat API的编程接口。你可以直接在Python代码中调用OfficeCowork，而不需要通过命令行。
 
 ## 特性
 
@@ -17,7 +17,7 @@ OpenCowork现在支持作为Python库使用，提供类似OpenAI Chat API的编�
 
 ### 方式一：pip安装（推荐）
 
-OpenCowork可以作为Python包直接安装：
+OfficeCowork可以作为Python包直接安装：
 
 ```bash
 # 从源码安装
@@ -29,12 +29,12 @@ pip install .
 安装完成后，你可以直接在Python代码中导入使用：
 
 ```python
-from agia import OpenCoworkClient, create_client
+from agia import OfficeCoworkClient, create_client
 ```
 
 ### 方式二：依赖安装
 
-如果选择不安装为系统包，确保你已经安装了OpenCowork的所有依赖：
+如果选择不安装为系统包，确保你已经安装了OfficeCowork的所有依赖：
 
 ```bash
 pip install -r requirements.txt
@@ -46,12 +46,12 @@ pip install -r requirements.txt
 
 ```python
 # 如果通过pip安装，使用：
-from agia import OpenCoworkClient
+from agia import OfficeCoworkClient
 # 如果使用源码，使用：
-# from main import OpenCoworkClient
+# from main import OfficeCoworkClient
 
 # 初始化客户端
-client = OpenCoworkClient(
+client = OfficeCoworkClient(
     api_key="your_api_key_here",
     model="claude-3-sonnet-20240229",  # 或 "gpt-4", "gpt-3.5-turbo"等
     api_base="https://api.anthropic.com"  # 可选
@@ -96,12 +96,12 @@ response = client.chat(
 
 ## API 参考
 
-### OpenCoworkClient
+### OfficeCoworkClient
 
 #### 初始化参数
 
 ```python
-OpenCoworkClient(
+OfficeCoworkClient(
     api_key: str,              # 必需: API密钥
     model: str,                # 必需: 模型名称
     api_base: str = None,      # 可选: API基础URL
@@ -160,7 +160,7 @@ messages = [
 ### 1. 单个任务执行
 
 ```python
-client = OpenCoworkClient(api_key="xxx", model="gpt-4")
+client = OfficeCoworkClient(api_key="xxx", model="gpt-4")
 
 response = client.chat(
     messages=[{"role": "user", "content": "创建一个待办事项应用"}],
@@ -206,7 +206,7 @@ for task in tasks:
 ### 4. 多任务模式（复杂项目）
 
 ```python
-client = OpenCoworkClient(
+client = OfficeCoworkClient(
     api_key="xxx",
     model="gpt-4",
     single_task_mode=False  # 启用多任务模式
@@ -224,7 +224,7 @@ response = client.chat(
 ### 调试模式
 
 ```python
-client = OpenCoworkClient(
+client = OfficeCoworkClient(
     api_key="xxx",
     model="gpt-4",
     debug_mode=True  # 启用详细日志
@@ -234,7 +234,7 @@ client = OpenCoworkClient(
 ### 自定义配置
 
 ```python
-client = OpenCoworkClient(
+client = OfficeCoworkClient(
     api_key="xxx",
     model="claude-3-haiku-20240307",
     api_base="https://custom-api.com",
@@ -251,7 +251,7 @@ print(config)
 
 ```python
 try:
-    client = OpenCoworkClient(api_key="", model="gpt-4")  # 空API密钥
+    client = OfficeCoworkClient(api_key="", model="gpt-4")  # 空API密钥
 except ValueError as e:
     print(f"配置错误: {e}")
 
@@ -298,11 +298,11 @@ if not response["success"]:
 ```python
 import os
 # 如果通过pip安装，使用：
-from agia import OpenCoworkClient
+from agia import OfficeCoworkClient
 # 如果使用源码，使用：
-# from main import OpenCoworkClient
+# from main import OfficeCoworkClient
 
-client = OpenCoworkClient(
+client = OfficeCoworkClient(
     api_key=os.environ.get("OPENAI_API_KEY"),  # 或 ANTHROPIC_API_KEY
     model=os.environ.get("MODEL_NAME", "gpt-4")
 )
@@ -310,11 +310,11 @@ client = OpenCoworkClient(
 
 ## 总结
 
-OpenCowork的Python库接口提供了强大而灵活的编程访问方式，让你可以：
+OfficeCowork的Python库接口提供了强大而灵活的编程访问方式，让你可以：
 
-- 🔧 在Python应用中直接集成OpenCowork功能
+- 🔧 在Python应用中直接集成OfficeCowork功能
 - 📊 获得结构化的执行结果和详细信息
 - 🔄 轻松实现批处理和工作流自动化
 - ⚙️ 通过代码进行精确的配置控制
 
-开始使用OpenCowork Python库，让AI驱动的任务执行成为你Python项目的一部分！ 
+开始使用OfficeCowork Python库，让AI驱动的任务执行成为你Python项目的一部分！ 

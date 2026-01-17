@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ limitations under the License.
 """
 
 """
-OpenCowork Print System
+OfficeCowork Print System
 ----------------------------------
 Features:
 1. print_current   Write to <agent_id>.out according to agent_id, manager/None → terminal + manager.out.

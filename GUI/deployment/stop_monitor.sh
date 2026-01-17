@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenCowork GUI 多应用监控程序停止脚本
+# OfficeCowork GUI 多应用监控程序停止脚本
 
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -118,9 +118,9 @@ else:
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Application name macro definition (will be updated by AppManager)
-APP_NAME = "Open Cowork"
+APP_NAME = "Office Cowork"
 
-from src.main import OpenCoworkMain
+from src.main import OfficeCoworkMain
 from app_manager import AppManager
 
 
@@ -1374,7 +1374,7 @@ def execute_agia_task_process_target(user_requirement, output_queue, input_queue
             return
         
         # Create a temporary configuration that overrides config.txt for GUI mode
-        # We'll use environment variables to pass these settings to the OpenCowork system
+        # We'll use environment variables to pass these settings to the OfficeCowork system
         original_env = {}
         
         # Model configuration: GUI setting overrides config.txt
@@ -1434,7 +1434,7 @@ def execute_agia_task_process_target(user_requirement, output_queue, input_queue
         # Set environment variable for GUI mode detection
         os.environ['AGIA_GUI_MODE'] = 'true'
         
-        agia = OpenCoworkMain(
+        agia = OfficeCoworkMain(
             out_dir=out_dir,
             debug_mode=False,
             detailed_summary=True,
@@ -1445,8 +1445,8 @@ def execute_agia_task_process_target(user_requirement, output_queue, input_queue
             prompts_folder=prompts_folder,  # Use app-specific prompts folder if available
             user_id=user_id,  # Pass user ID for MCP knowledge base tools
             routine_file=routine_file,  # Pass routine file to main application
-            plan_mode=plan_mode,  # Pass plan_mode to OpenCoworkMain
-            enable_thinking=enable_thinking  # Pass thinking mode to OpenCoworkMain
+            plan_mode=plan_mode,  # Pass plan_mode to OfficeCoworkMain
+            enable_thinking=enable_thinking  # Pass thinking mode to OfficeCoworkMain
         )
         
         # Use detailed_requirement if provided (contains conversation history)
@@ -1860,7 +1860,7 @@ def execute_agia_task_process_target(user_requirement, output_queue, input_queue
     finally:
         output_queue.put({'event': 'STOP'})
 
-class OpenCoworkGUI:
+class OfficeCoworkGUI:
     def __init__(self, app_name: Optional[str] = None):
         # User session management
         self.user_sessions = {}  # session_id -> UserSession
@@ -1953,7 +1953,7 @@ class OpenCoworkGUI:
             if self.app_manager.is_app_mode():
                 APP_NAME = self.app_manager.get_app_name()
             else:
-                APP_NAME = "OpenCowork"
+                APP_NAME = "OfficeCowork"
             
             # 更新环境变量 AGIA_APP_NAME（保持向后兼容）
             if app_name:
@@ -2549,7 +2549,7 @@ class UserSession:
 # Initialize GUI instance - app_name will be set from environment variable or command line
 # This allows --app parameter to work even though gui_instance is created at module level
 _app_name_from_env = os.environ.get('AGIA_APP_NAME', None)
-gui_instance = OpenCoworkGUI(app_name=_app_name_from_env)
+gui_instance = OfficeCoworkGUI(app_name=_app_name_from_env)
 
 def create_temp_session_id(request, api_key=None):
     """Create a temporary session ID for API calls with user isolation"""
@@ -7209,7 +7209,7 @@ def get_app_info():
         traceback.print_exc()
         return jsonify({
             'success': False,
-            'app_name': 'OpenCowork',
+            'app_name': 'OfficeCowork',
             'logo_url': None,
             'is_app_mode': False,
             'error': str(e)
@@ -8213,7 +8213,7 @@ def api_contact_us():
 
 if __name__ == '__main__':
     # 解析命令行参数
-    parser = argparse.ArgumentParser(description='OpenCowork GUI Server')
+    parser = argparse.ArgumentParser(description='OfficeCowork GUI Server')
     parser.add_argument('--port', '-p', type=int, default=5002, 
                        help='Port specified to use')
     parser.add_argument('--app', '-a', type=str, default=None,
@@ -8230,16 +8230,16 @@ if __name__ == '__main__':
         # 重新创建gui_instance以应用app_name
         import __main__
         if hasattr(__main__, 'gui_instance'):
-            __main__.gui_instance = OpenCoworkGUI(app_name=app_name)
+            __main__.gui_instance = OfficeCoworkGUI(app_name=app_name)
         # Also update the module-level gui_instance
         import sys
         current_module = sys.modules[__name__]
-        current_module.gui_instance = OpenCoworkGUI(app_name=app_name)
+        current_module.gui_instance = OfficeCoworkGUI(app_name=app_name)
     else:
         # 如果没有指定app_name，确保initial_app_name为None（默认平台）
         gui_instance.initial_app_name = None
     
-    print(f"🚀 Starting OpenCowork GUI Server on port {port}")
+    print(f"🚀 Starting OfficeCowork GUI Server on port {port}")
     if app_name:
         print(f"📱 Application mode: {app_name} ({gui_instance.app_manager.get_app_name()})")
     socketio.run(app, host='0.0.0.0', port=port, debug=False, allow_unsafe_werkzeug=True) 

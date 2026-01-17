@@ -33,6 +33,6 @@ Its features include:
 12. Private deployment: The software is fully open-source and completely free, supports pure private deployment in internet-free environments, supports multiple modes including terminal operation, personal web interface operation, small-scale cloud deployment, etc., compatible with various domestic large models such as GLM-4.5 and international advanced large models like Claude Sonnet 4. Domestic model costs are controllable (documents of dozens of pages and tens of thousands of words cost less than 1 RMB).
 
 
-Web preview：<https://OpenCoworkonline.com/colordoc>，login without APIKey, you can find examples.
+Web preview：<https://OfficeCoworkonline.com/colordoc>，login without APIKey, you can find examples.
 
 Windows installation package：<https://github.com/agi-hub/ColorDoc/releases>

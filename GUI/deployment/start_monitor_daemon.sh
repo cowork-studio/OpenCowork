@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenCowork GUI 多应用监控程序后台运行脚本
+# OfficeCowork GUI 多应用监控程序后台运行脚本
 
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -45,7 +45,7 @@ if [[ ! -f "../app.py" ]]; then
     exit 1
 fi
 
-echo "启动 OpenCowork GUI 多应用监控程序 (后台模式)..."
+echo "启动 OfficeCowork GUI 多应用监控程序 (后台模式)..."
 echo "日志文件: $DAEMON_LOG"
 echo "PID文件: $PID_FILE"
 echo "配置文件: monitor_config.json"

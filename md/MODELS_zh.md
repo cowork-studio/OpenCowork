@@ -1,8 +1,8 @@
-# OpenCowork 模型选择指南
+# OfficeCowork 模型选择指南
 
 **中文** | [**English**](MODELS.md)
 
-OpenCowork 支持多种AI模型，本指南帮助您根据需求和预算选择最适合的模型。
+OfficeCowork 支持多种AI模型，本指南帮助您根据需求和预算选择最适合的模型。
 
 ## 🌟 推荐模型
 
@@ -285,7 +285,7 @@ Tool_calling_format=True  # 推荐保持默认
 
 ## 🔄 模型切换
 
-OpenCowork 支持随时切换模型，无需重新开始任务：
+OfficeCowork 支持随时切换模型，无需重新开始任务：
 
 ```bash
 # 当前任务使用 DeepSeek
@@ -295,4 +295,4 @@ python cowork.py --model deepseek-chat -r "开始任务"
 python cowork.py --model claude-3-5-sonnet-20241022 -c  # 继续之前的任务
 ```
 
-选择合适的模型是成功使用OpenCowork的关键。建议从性价比高的模型开始，根据实际需求逐步调整。 
+选择合适的模型是成功使用OfficeCowork的关键。建议从性价比高的模型开始，根据实际需求逐步调整。 

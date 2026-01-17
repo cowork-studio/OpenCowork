@@ -180,7 +180,7 @@ class UserSession:
             if self.app_manager.is_app_mode():
                 APP_NAME = self.app_manager.get_app_name()
             else:
-                APP_NAME = "OpenCowork"
+                APP_NAME = "OfficeCowork"
             
             # 更新环境变量 AGIA_APP_NAME（保持向后兼容）
             if app_name:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ limitations under the License.
 """
 
 """
-OpenCowork Main Program
+OfficeCowork Main Program
 
 A complete automated task processing workflow:
 1. Receive user requirement input
@@ -26,7 +26,7 @@ A complete automated task processing workflow:
 """
 
 # Application name macro definition
-APP_NAME = "OpenCowork"
+APP_NAME = "OfficeCowork"
 
 # Imports
 from src.tools.print_system import print_current, print_system
@@ -231,7 +231,7 @@ def get_multiline_input(prompt: str) -> str:
 def get_user_requirement_interactive(requirement: Optional[str] = None, 
                                     last_requirement: Optional[str] = None) -> Optional[str]:
     """
-    Get user requirement (extracted from OpenCoworkMain for use in main())
+    Get user requirement (extracted from OfficeCoworkMain for use in main())
     
     Args:
         requirement: Provided requirement from command line
@@ -297,7 +297,7 @@ def get_user_requirement_interactive(requirement: Optional[str] = None,
 
 def ask_user_confirmation_interactive(message: str, default_yes: bool = True) -> bool:
     """
-    Ask user for confirmation (extracted from OpenCoworkMain for use in main())
+    Ask user for confirmation (extracted from OfficeCoworkMain for use in main())
     
     Args:
         message: Confirmation message to display
@@ -319,7 +319,7 @@ def ask_user_confirmation_interactive(message: str, default_yes: bool = True) ->
         print_current("\n❌ User cancelled operation")
         return False
 
-class OpenCoworkMain:
+class OfficeCoworkMain:
     def __init__(self, 
                  out_dir: str = "output", 
                  api_key: Optional[str] = None, 
@@ -340,7 +340,7 @@ class OpenCoworkMain:
                  enable_thinking: Optional[bool] = None):
 
         """
-        Initialize OpenCowork main program
+        Initialize OfficeCowork main program
         
         Args:
             out_dir: Output directory
@@ -373,19 +373,19 @@ class OpenCoworkMain:
         if api_key is None:
             api_key = get_api_key()
             if api_key is None:
-                raise ValueError("API key not found. Please provide api_key parameter, set it in config/config.txt, or set OpenCowork_API_KEY environment variable")
+                raise ValueError("API key not found. Please provide api_key parameter, set it in config/config.txt, or set OfficeCowork_API_KEY environment variable")
 
         # Load model from config/config.txt if not provided
         if model is None:
             model = get_model()
             if model is None:
-                raise ValueError("Model not found. Please provide model parameter, set it in config/config.txt, or set OpenCowork_MODEL environment variable")
+                raise ValueError("Model not found. Please provide model parameter, set it in config/config.txt, or set OfficeCowork_MODEL environment variable")
 
         # Load API base from config/config.txt if not provided
         if api_base is None:
             api_base = get_api_base()
             if api_base is None:
-                raise ValueError("API base URL not found. Please provide api_base parameter, set it in config/config.txt, or set OpenCowork_API_BASE environment variable")
+                raise ValueError("API base URL not found. Please provide api_base parameter, set it in config/config.txt, or set OfficeCowork_API_BASE environment variable")
 
         # Store the validated parameters
         self.out_dir = out_dir
@@ -477,7 +477,7 @@ class OpenCoworkMain:
         try:
             os.symlink(link_target, link_path)
             print_current(f"🔗 Created symbolic link: {link_path} -> {link_target}")
-            print_current(f"🎯 OpenCowork will now operate on external code directory: {link_target}")
+            print_current(f"🎯 OfficeCowork will now operate on external code directory: {link_target}")
         except Exception as e:
             print_current(f"⚠️ Warning: Failed to create symbolic link: {e}")
             print_current(f"    This may be due to insufficient permissions or unsupported file system")
@@ -849,15 +849,15 @@ class OpenCoworkMain:
         return True
 
 
-class OpenCoworkClient:
+class OfficeCoworkClient:
     """
-    OpenCowork Python Library Interface
+    OfficeCowork Python Library Interface
     
-    Provides OpenAI-like chat interface for programmatic access to OpenCowork functionality.
+    Provides OpenAI-like chat interface for programmatic access to OfficeCowork functionality.
                 Does not rely on config/config.txt file - all configuration is passed during initialization.
     
     Example usage:
-        client = OpenCoworkClient(
+        client = OfficeCoworkClient(
             api_key="your_api_key",
             model="claude-3-sonnet-20240229"
         )
@@ -890,7 +890,7 @@ class OpenCoworkClient:
                  routine_file: Optional[str] = None,
                  enable_thinking: Optional[bool] = None):
         """
-        Initialize OpenCowork Client
+        Initialize OfficeCowork Client
         
         Args:
             api_key: API key for LLM service (optional, will read from config/config.txt if not provided)
@@ -1003,15 +1003,15 @@ class OpenCoworkClient:
             dir = f"agia_output_{timestamp}"
         
         try:
-            # 🔧 Check current thread's agent_id (set in agent_context when OpenCoworkClient initializes)
+            # 🔧 Check current thread's agent_id (set in agent_context when OfficeCoworkClient initializes)
             current_agent_id = get_current_agent_id()
             
 
             from src.tools.print_system import set_output_directory
             set_output_directory(dir)
             
-            # Create OpenCowork main instance
-            main_app = OpenCoworkMain(
+            # Create OfficeCowork main instance
+            main_app = OfficeCoworkMain(
                 out_dir=dir,
                 api_key=self.api_key,
                 model=self.model,
@@ -1031,7 +1031,7 @@ class OpenCoworkClient:
             
             # 🔧 If agent_id exists
             if current_agent_id:
-                print_current(f"🏷️ OpenCoworkClient using agent ID: {current_agent_id}")
+                print_current(f"🏷️ OfficeCoworkClient using agent ID: {current_agent_id}")
             
             # Execute the task
             if current_agent_id:
@@ -1127,9 +1127,9 @@ class OpenCoworkClient:
 
 
 # Convenience function for quick usage
-def create_client(api_key: Optional[str] = None, model: Optional[str] = None, user_id: Optional[str] = None, **kwargs) -> OpenCoworkClient:
+def create_client(api_key: Optional[str] = None, model: Optional[str] = None, user_id: Optional[str] = None, **kwargs) -> OfficeCoworkClient:
     """
-    Convenience function to create OpenCowork client
+    Convenience function to create OfficeCowork client
     
     Args:
         api_key: API key for LLM service (optional, will read from config/config.txt if not provided)
@@ -1138,13 +1138,13 @@ def create_client(api_key: Optional[str] = None, model: Optional[str] = None, us
         **kwargs: Additional configuration parameters
         
     Returns:
-        OpenCoworkClient instance
+        OfficeCoworkClient instance
     """
-    return OpenCoworkClient(api_key=api_key, model=model, user_id=user_id, **kwargs)
+    return OfficeCoworkClient(api_key=api_key, model=model, user_id=user_id, **kwargs)
 
 
 def print_ascii_banner():
-    """Print ASCII art banner for OpenCowork"""
+    """Print ASCII art banner for OfficeCowork"""
     # This function is imported from cowork.py
     pass
 
@@ -1348,10 +1348,10 @@ Usage Examples:
             print_current("Task execution cancelled by user")
             sys.exit(0)
     
-    # === Step 5: Execute via OpenCoworkClient ===
+    # === Step 5: Execute via OfficeCoworkClient ===
     try:
-        # Create OpenCoworkClient
-        client = OpenCoworkClient(
+        # Create OfficeCoworkClient
+        client = OfficeCoworkClient(
             api_key=args.api_key,
             model=args.model,
             api_base=args.api_base,

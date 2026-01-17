@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -139,9 +139,9 @@ def get_api_key(config_file: str = "config/config.txt") -> Optional[str]:
     config = load_config(config_file)
     api_key = config.get('api_key')
     
-    # If not found in config file, try OpenCowork_API_KEY environment variable
+    # If not found in config file, try OfficeCowork_API_KEY environment variable
     if not api_key:
-        api_key = os.environ.get('OpenCowork_API_KEY')
+        api_key = os.environ.get('OfficeCowork_API_KEY')
     
     return api_key
 
@@ -163,9 +163,9 @@ def get_api_base(config_file: str = "config/config.txt") -> Optional[str]:
     config = load_config(config_file)
     api_base = config.get('api_base')
     
-    # If not found in config file, try OpenCowork_API_BASE environment variable
+    # If not found in config file, try OfficeCowork_API_BASE environment variable
     if not api_base:
-        api_base = os.environ.get('OpenCowork_API_BASE')
+        api_base = os.environ.get('OfficeCowork_API_BASE')
     
     return api_base
 
@@ -234,9 +234,9 @@ def get_model(config_file: str = "config/config.txt") -> Optional[str]:
     config = load_config(config_file)
     model = config.get('model')
     
-    # If not found in config file, try OpenCowork_MODEL environment variable
+    # If not found in config file, try OfficeCowork_MODEL environment variable
     if not model:
-        model = os.environ.get('OpenCowork_MODEL')
+        model = os.environ.get('OfficeCowork_MODEL')
     
     return model
 
@@ -261,14 +261,14 @@ def get_max_tokens(config_file: str = "config/config.txt") -> Optional[int]:
             print(f"Warning: Invalid max_tokens value '{max_tokens_str}' in config file, must be an integer")
             # Fall through to model-specific defaults
     
-    # If not found in config file, try OpenCowork_MAX_OUT_TOKENS environment variable
+    # If not found in config file, try OfficeCowork_MAX_OUT_TOKENS environment variable
     if not max_tokens_str:
-        max_tokens_env = os.environ.get('OpenCowork_MAX_OUT_TOKENS')
+        max_tokens_env = os.environ.get('OfficeCowork_MAX_OUT_TOKENS')
         if max_tokens_env:
             try:
                 return int(max_tokens_env)
             except ValueError:
-                print(f"Warning: Invalid OpenCowork_MAX_OUT_TOKENS value '{max_tokens_env}', must be an integer")
+                print(f"Warning: Invalid OfficeCowork_MAX_OUT_TOKENS value '{max_tokens_env}', must be an integer")
     
     # If no manual setting, use model-specific defaults
     model = get_model(config_file)

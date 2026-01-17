@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@ limitations under the License.
 """
 
 """
-OpenCowork startup script
+OfficeCowork startup script
 """
 
 import sys
 
 # Application name macro definition
-APP_NAME = "OpenCowork"
+APP_NAME = "OfficeCowork"
 
 def main():
     print(f"🚀 Starting {APP_NAME}...")

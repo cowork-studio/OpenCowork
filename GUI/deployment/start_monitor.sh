@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenCowork GUI 监控程序启动脚本
+# OfficeCowork GUI 监控程序启动脚本
 
 # 获取脚本所在目录
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -23,7 +23,7 @@ if [[ ! -f "../app.py" ]]; then
     exit 1
 fi
 
-echo "启动 OpenCowork GUI 监控程序..."
+echo "启动 OfficeCowork GUI 监控程序..."
 echo "日志文件: logs/monitor.log"
 echo "按 Ctrl+C 停止监控"
 echo ""

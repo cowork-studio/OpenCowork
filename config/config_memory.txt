@@ -1,4 +1,4 @@
-# OpenCowork Long-Term Memory System Configuration File
+# OfficeCowork Long-Term Memory System Configuration File
 # This file is used to configure parameters related to the long-term memory feature
 
 # API configuration - inherited from config/config.txt

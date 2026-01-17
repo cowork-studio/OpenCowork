@@ -1,8 +1,8 @@
-# OpenCowork Model Selection Guide
+# OfficeCowork Model Selection Guide
 
 [**中文**](MODELS_zh.md) | **English**
 
-OpenCowork supports multiple AI models. This guide helps you choose the most suitable model based on your needs and budget.
+OfficeCowork supports multiple AI models. This guide helps you choose the most suitable model based on your needs and budget.
 
 ## 🌟 Recommended Models
 
@@ -285,7 +285,7 @@ Tool_calling_format=True  # Recommended to keep default
 
 ## 🔄 Model Switching
 
-OpenCowork supports switching models anytime without restarting tasks:
+OfficeCowork supports switching models anytime without restarting tasks:
 
 ```bash
 # Current task using DeepSeek
@@ -295,4 +295,4 @@ python cowork.py --model deepseek-chat -r "Start task"
 python cowork.py --model claude-3-5-sonnet-20241022 -c  # Continue previous task
 ```
 
-Choosing the right model is key to successfully using OpenCowork. It's recommended to start with cost-effective models and adjust gradually based on actual needs. 
+Choosing the right model is key to successfully using OfficeCowork. It's recommended to start with cost-effective models and adjust gradually based on actual needs. 

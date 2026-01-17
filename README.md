@@ -1,42 +1,43 @@
-# Open Cowork
+# Claude Cowork for Office
 
-> A versatile local AI agent platform for Vibe Document, Vibe Coding, and general task execution. Similar to Claude cowork, fully localizable with universal model support.
+> A local AI agent platform optimized for office tasks, specializing in professional document writing, literature research, code development, and other office scenarios. Similar to Claude cowork, fully localizable with universal model support.
 
 [**中文**](README_zh.md) | **English**
 
 ## 🚀 Project Introduction
-**Open Cowork** is a versatile platform for general-purpose tasks, including Vibe Document, Vibe Coding, and Vibe computer execution. Similar to Claude cowork / Cursor, Open Cowork serves as a general-purpose local agent system that can autonomously operate your computer and handle complex tasks through natural language interaction. It offers both GUI and CLI modes, and can be deployed in the cloud, on laptops, or on embedded devices (ARM). The platform includes 20+ built-in tools and many routine files (skills) for a broad range of use cases. Open Cowork excels at creating colorful documents with rich figures, and you can preview and edit your documents directly in the GUI. You can also write programs with multi-round interaction, drag-and-drop file support (or @files), and both agent mode and plan mode. 
+**Claude Cowork for Office** is an AI agent platform optimized for office tasks, specializing in professional document writing, literature research, code development, and other office scenarios. Similar to Claude cowork / Cursor, Claude Cowork for Office serves as an office-focused local agent system that can autonomously operate your computer and handle complex tasks through natural language interaction. It offers both GUI and CLI modes, and can be deployed in the cloud, on laptops, or on embedded devices (ARM). The platform has been deeply optimized for office scenarios, including 20+ built-in tools and many routine files (skills), particularly suitable for professional document writing, academic research, technical report writing, code development, and other office tasks. Claude Cowork for Office excels at creating colorful documents with rich figures, and you can preview and edit your documents directly in the GUI. You can also write programs with multi-round interaction, drag-and-drop file support (or @files), and both agent mode and plan mode. 
 
 ### 🤔 Is This Software Right for You?
 
-- **Looking for a Claude cowork-like experience?** Open Cowork provides a similar collaborative AI experience, enabling you to work with an intelligent agent that can understand your needs, operate your local environment, and execute complex tasks autonomously.
-- **Need a general-purpose local agent?** If you want an agent system that can handle diverse tasks on your local machine—from code writing to document generation, from data analysis to system operations—Open Cowork is designed for you.
-- **Writing complex professional documents?** If you need to create richly illustrated, complex professional reports such as academic papers, in-depth research, or patents, Open Cowork excels at this.
+- **Looking for a Claude cowork-like experience?** Claude Cowork for Office provides a similar collaborative AI experience, enabling you to work with an intelligent agent that can understand your needs, operate your local environment, and execute complex tasks autonomously.
+- **Need a professional office agent?** If you want an agent system optimized for office tasks—from professional document writing to literature research, from code development to technical reports—Claude Cowork for Office is designed for you.
+- **Writing complex professional documents?** If you need to create richly illustrated, complex professional reports such as academic papers, in-depth research, or patents, Claude Cowork for Office excels at this.
+- **Conducting literature research and studies?** If you need to perform academic research, literature reviews, or technical research, Claude Cowork for Office can help you collect information, analyze materials, and generate professional reports.
 - **Seeking a locally deployable agent?** If you want an agent system that supports local deployment and is compatible with various Anthropic/OpenAI interface models, this could be your solution.
-- **Vibe enthusiast?** If you're passionate about the Vibe workflow, you'll love what Open Cowork offers.
 
 ### 🆚 Comparison with Claude Cowork
 
-While Open Cowork offers a similar collaborative AI experience to Claude cowork, it provides several key advantages:
+While Claude Cowork for Office offers a similar collaborative AI experience to Claude cowork, it provides several key advantages:
 
-- **🏠 Fully Localizable**: Open Cowork can be completely installed and run on your local machine, giving you full control over your data and environment without relying on cloud services.
-- **🔌 Universal Model Support**: Unlike Claude cowork which is limited to Claude models, Open Cowork supports any mainstream large language model including Claude, GPT-4, DeepSeek V3, Kimi K2, GLM, Qwen, and more through standard Anthropic/OpenAI API interfaces.
-- **💻 Cross-Platform Compatibility**: Full support for Windows, Linux, and macOS, allowing you to use Open Cowork on any operating system you prefer.
+- **🏠 Fully Localizable**: Claude Cowork for Office can be completely installed and run on your local machine, giving you full control over your data and environment without relying on cloud services.
+- **🔌 Universal Model Support**: Unlike Claude cowork which is limited to Claude models, Claude Cowork for Office supports any mainstream large language model including Claude, GPT-4, DeepSeek V3, Kimi K2, GLM, Qwen, and more through standard Anthropic/OpenAI API interfaces.
+- **💻 Cross-Platform Compatibility**: Full support for Windows, Linux, and macOS, allowing you to use Claude Cowork for Office on any operating system you prefer.
 - **📖 100% Open Source**: Complete source code available, enabling transparency, customization, and community-driven improvements without vendor lock-in.
-- **⚙️ No Dependency on Claude Code**: Built from the ground up with independent architecture, Open Cowork does not require Claude Code as an underlying dependency, providing more flexibility and control.
+- **⚙️ No Dependency on Claude Code**: Built from the ground up with independent architecture, Claude Cowork for Office does not require Claude Code as an underlying dependency, providing more flexibility and control.
+- **📝 Office Task Optimization**: Specifically optimized for office tasks such as professional document writing, literature research, and code development, providing higher quality professional output.
 
 ## Quick start
 
-You can access https://agiagentonline.com/opencowork to try on Cloud
+You can access https://agiagentonline.com/OfficeCowork to try on Cloud
 backup address http://156.238.255.79:5002
 You can login in Guest account with empty API key to see demos.
 You can also login with your phone number to start a new task.
 
-## GUI for Vibe Everything
+## GUI for Vibe Office
 
-![GUI](./md/images/OpenCowork_GUI.png)
+![GUI](./md/images/OfficeCowork_GUI.png)
 
-**Open Cowork** follows a Plan based ReAct model for complicated task execution. It employs a multi-round iterative working mechanism where the large model can make tool calls and receive feedback results in each round. It is used to update files in the workspace or change the external environment through tools according to user needs. Open Cowork can autonomously call a wide range of MCP tools and operating system tools, featuring multi-agent collaboration, multi-level long-term memory, and embodied intelligence perception. It emphasizes the generality and autonomous decision-making capabilities of the agent. Open Cowork's extensive operating system support, large model support, and multiple operation modes make it suitable for building human-like general intelligence systems to achieve complex report research and generation, project-level code writing, automatic computer operation, multi-agent research (such as competition, debate, collaboration) and other applications.
+**Claude Cowork for Office** follows a Plan based ReAct model for complicated task execution. It employs a multi-round iterative working mechanism where the large model can make tool calls and receive feedback results in each round. It is used to update files in the workspace or change the external environment through tools according to user needs. Claude Cowork for Office can autonomously call a wide range of MCP tools and operating system tools, featuring multi-agent collaboration, multi-level long-term memory, and embodied intelligence perception. It emphasizes the generality and autonomous decision-making capabilities of the agent. Claude Cowork for Office's extensive operating system support, large model support, and multiple operation modes make it particularly suitable for office scenarios, including complex report research and generation, project-level code writing, literature research, professional document writing, and other applications.
 
 
 ## 🌐 Platform Compatibility
@@ -96,6 +97,7 @@ python cowork.py --api-key YOUR_KEY --model gpt-4 --api-base https://api.openai.
 
 ## 🎯 Core Features
 
+### General Features
 - **🧠 Intelligent Task Decomposition**: AI automatically decomposes complex requirements into executable subtasks
 - **🔄 Multi-round Iterative Execution**: Each task supports multi-round optimization to ensure quality (default 50 rounds)
 - **🔍 Intelligent Code Search**: Semantic search + keyword search for quick code location
@@ -110,9 +112,19 @@ python cowork.py --api-key YOUR_KEY --model gpt-4 --api-base https://api.openai.
 - **🤝 Interactive Control**: Optional user confirmation mode with step-by-step control
 - **📁 Flexible Output**: Custom output directory with automatic timestamp naming for new projects
 
+### 📝 Professional Document Writing Advantages (from ColorDoc)
+
+- **🖼️ Rich Illustrated Report Generation**: Supports automatic insertion of multiple image formats (Mermaid diagrams, SVG diagrams, Google/Baidu image search, AI-generated images, code-generated images), where large models can directly output mixed text and image layout formats, making documents colorful and insightful
+- **📄 Long Document Generation Capability**: Capable of producing complete reports, applications, papers, patents, etc., reaching 30-50 pages in length, without requiring segmented processing
+- **✍️ Elegant Professional Writing Style**: Similar to academic papers and in-depth reports, unlike ordinary large models that only list points without writing details, the writing is more professional and human-like, suitable for in-depth writing applications
+- **🛠️ Built-in Editor Support**: Built-in support for SVG diagram editor, Mermaid source code editor, Markdown editor and previewer, with one-click image replacement for searched images, making illustrated document editing easier
+- **📑 Multi-format Output Support**: Supports output in multiple document formats including Markdown, Word, PDF, LaTeX, etc., especially LaTeX format, essential for academic paper writers
+- **🎨 High-quality Image Output**: To provide high-quality vector graphics required for publications and ensure compatibility, generated images are provided in both SVG and PNG formats, with Markdown and PDF supporting SVG image formats, and Word defaulting to PNG format
+- **📋 Rich Writing Templates**: Provides over 10 writing templates, including report writing, national project application writing, bid proposal technical response writing, blog writing, rich image document writing, patent disclosure writing, document illustration, etc., with diverse styles
+
 ## 🛠️ Tool Sets
 
-Open Cowork provides a rich set of tools divided into **Core Tools** and **Extended Tools** categories. Core tools are available by default, while extended tools need to be manually enabled.
+Claude Cowork for Office provides a rich set of tools divided into **Core Tools** and **Extended Tools** categories. Core tools are available by default, while extended tools need to be manually enabled.
 
 ### Core Tools
 
@@ -166,7 +178,7 @@ Extended tools are not loaded by default. To use tools from the extended tool se
 3. Copy the complete JSON definition of that tool (including the tool name and all content)
 4. Open the `prompts/tool_prompt.json` file
 5. Add the copied tool definition to the JSON object (make sure to maintain correct JSON format and add comma separators)
-6. Save the file and restart Open Cowork
+6. Save the file and restart Claude Cowork for Office
 
 **Example**: Enabling the `file_search` tool
 
@@ -182,7 +194,7 @@ All tools support extension through MCP (Model Context Protocol), allowing easy 
 
 ## 📋 Typical Routines (Task Templates)
 
-Open Cowork provides rich task templates (Routines) in the `routine/` directory. These templates define standard workflows and quality requirements for different types of tasks. You can use these templates directly or customize them according to your needs:
+Claude Cowork for Office provides rich task templates (Routines) in the `routine/` directory. These templates define standard workflows and quality requirements for different types of tasks. You can use these templates directly or customize them according to your needs:
 
 ### 📝 Document Writing
 
@@ -231,7 +243,7 @@ Routine files define standard workflows, quality requirements, and output format
 
 ## 🤖 Model Selection
 
-Open Cowork supports various mainstream AI models including Claude, GPT-4, DeepSeek V3, Kimi K2, etc., meeting different user needs and budgets. With streaming / non-streaming support, tool-call or chat-based tool interface, Anthropic / OpenAI API compatibility.
+Claude Cowork for Office supports various mainstream AI models including Claude, GPT-4, DeepSeek V3, Kimi K2, etc., meeting different user needs and budgets. With streaming / non-streaming support, tool-call or chat-based tool interface, Anthropic / OpenAI API compatibility.
 
 **🎯 [View Detailed Model Selection Guide →](md/MODELS.md)**
 
@@ -245,7 +257,7 @@ Open Cowork supports various mainstream AI models including Claude, GPT-4, DeepS
 
 ## ⚙️ Configuration Files
 
-Open Cowork uses `config/config.txt` and `config/config_memory.txt` files for system configuration.
+Claude Cowork for Office uses `config/config.txt` and `config/config_memory.txt` files for system configuration.
 
 ### Quick Configuration
 After installation, please configure the following basic options:
@@ -284,7 +296,7 @@ After installation, don't forget to configure api key, api base, model, and lang
 
 ## ⚠️ Security Notice
 
-As a general-purpose task agent, Open Cowork has the capability to call system terminal commands. Although it usually does not operate files outside the working directory, the large model may execute software installation commands (such as pip, apt, etc.). Please pay attention when using:
+As a general-purpose task agent, Claude Cowork for Office has the capability to call system terminal commands. Although it usually does not operate files outside the working directory, the large model may execute software installation commands (such as pip, apt, etc.). Please pay attention when using:
 - Carefully review executed commands
 - Recommend running important tasks in a sandbox environment
 - Regularly backup important data
@@ -292,7 +304,7 @@ As a general-purpose task agent, Open Cowork has the capability to call system t
 ## 🔗 Extended Features
 
 ### 🐍 Python Library Interface
-Open Cowork now supports being called directly as a Python library in code, providing a programming interface similar to the OpenAI Chat API.
+Claude Cowork for Office now supports being called directly as a Python library in code, providing a programming interface similar to the OpenAI Chat API.
 
 **📖 [View Python Library Usage Guide →](md/README_python_lib.md)**
 

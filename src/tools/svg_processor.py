@@ -8,7 +8,7 @@ This module processes SVG code blocks in markdown files and converts them to PNG
 It detects ```svg code blocks, generates separate SVG files, converts them to PNG,
 and updates the markdown with image links.
 
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 Licensed under the Apache License, Version 2.0
 """
 

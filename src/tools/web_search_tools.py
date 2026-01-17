@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from .print_system import print_system, print_current, print_system, print_error, print_debug
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

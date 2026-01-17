@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,15 +25,15 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 try:
-    from main import OpenCoworkMain
+    from main import OfficeCoworkMain
 except ImportError:
-    print("❌ Unable to import OpenCoworkMain")
+    print("❌ Unable to import OfficeCoworkMain")
     sys.exit(1)
 
 
 def demo_image_input():
     """Demonstrate image input function"""
-    print("🎯 OpenCowork image input function demonstration")
+    print("🎯 OfficeCowork image input function demonstration")
     print("=" * 50)
     
     # Check if there are available image files
@@ -56,9 +56,9 @@ def demo_image_input():
     image_file = image_files[0]
     print(f"📸 Using image file: {image_file}")
     
-    # Create OpenCowork instance
+    # Create OfficeCowork instance
     try:
-        agia = OpenCoworkMain(
+        agia = OfficeCoworkMain(
             debug_mode=True,
             detailed_summary=True,
             single_task_mode=True,
@@ -111,7 +111,7 @@ def demo_multi_image_input():
     print(f"📸 Using image file: {image1} and {image2}")
     
     try:
-        agia = OpenCoworkMain(
+        agia = OfficeCoworkMain(
             debug_mode=True,
             detailed_summary=True,
             single_task_mode=True,

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-cli-mcp wrapper for OpenCowork
+cli-mcp wrapper for OfficeCowork
 Using mature cli-mcp library as MCP client
 """
 
@@ -83,7 +83,7 @@ def find_cli_mcp_path():
     return 'cli-mcp'
 
 class CliMcpWrapper:
-    """cli-mcp wrapper, providing MCP functionality for OpenCowork"""
+    """cli-mcp wrapper, providing MCP functionality for OfficeCowork"""
     
     # Class variable to track if installation message has been shown
     _installation_message_shown = False
@@ -329,7 +329,7 @@ class CliMcpWrapper:
             if "cli-mcp" in str(e):
                 if not self._installation_message_shown:
                     print_error(f"❌ cli-mcp command not found. Please install it using: pip install cli-mcp")
-                    print_current(f"💡 After installation, restart OpenCowork to use MCP tools.")
+                    print_current(f"💡 After installation, restart OfficeCowork to use MCP tools.")
                     self._installation_message_shown = True
             else:
                 print_current(f"❌ Failed to list tools for server {server_name}: {e}")
@@ -339,7 +339,7 @@ class CliMcpWrapper:
             if "No such file or directory" in error_msg and "cli-mcp" in error_msg:
                 if not self._installation_message_shown:
                     print_error(f"❌ cli-mcp command not found. Please install it using: pip install cli-mcp")
-                    print_current(f"💡 After installation, restart OpenCowork to use MCP tools.")
+                    print_current(f"💡 After installation, restart OfficeCowork to use MCP tools.")
                     self._installation_message_shown = True
             else:
                 print_current(f"❌ Failed to list tools for server {server_name}: {e}")
@@ -419,7 +419,7 @@ class CliMcpWrapper:
                 error_msg = "cli-mcp command not found. Please install it using: pip install cli-mcp"
                 if not self._installation_message_shown:
                     print_current(f"❌ {error_msg}")
-                    print_current(f"💡 After installation, restart OpenCowork to use MCP tools.")
+                    print_current(f"💡 After installation, restart OfficeCowork to use MCP tools.")
                     self._installation_message_shown = True
                 return {
                     "status": "error",
@@ -441,7 +441,7 @@ class CliMcpWrapper:
                 friendly_error = "cli-mcp command not found. Please install it using: pip install cli-mcp"
                 if not self._installation_message_shown:
                     print_current(f"❌ {friendly_error}")
-                    print_current(f"💡 After installation, restart OpenCowork to use MCP tools.")
+                    print_current(f"💡 After installation, restart OfficeCowork to use MCP tools.")
                     self._installation_message_shown = True
                 return {
                     "status": "error",

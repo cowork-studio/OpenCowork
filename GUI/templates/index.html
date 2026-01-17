@@ -3921,7 +3921,7 @@
                     <div class="chat-messages scrollbar-custom" id="chatMessages">
                         <div class="message system">
                             <strong><i class="fas fa-info-circle"></i> {{ i18n.get('system_message', '系统消息' if lang == 'zh' else 'System Message') }}</strong><br>
-                            {{ i18n.get('welcome_message', '欢迎使用 OpenCowork！请在下方输入您的需求，系统将自动为您处理任务。' if lang == 'zh' else 'Welcome to OpenCowork! Please enter your requirements below, and the system will automatically process tasks for you.') }}
+                            {{ i18n.get('welcome_message', '欢迎使用 OfficeCowork！请在下方输入您的需求，系统将自动为您处理任务。' if lang == 'zh' else 'Welcome to OfficeCowork! Please enter your requirements below, and the system will automatically process tasks for you.') }}
                         </div>
                     </div>
                     
@@ -4759,7 +4759,7 @@
             chatMessages.innerHTML = `
                 <div class="message system">
                     <strong><i class="fas fa-info-circle"></i> ${I18N.system_message || '系统消息'}</strong><br>
-                    ${I18N.welcome_message || '欢迎使用 OpenCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
+                    ${I18N.welcome_message || '欢迎使用 OfficeCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
                 </div>
             `;
             
@@ -5394,7 +5394,7 @@
                         chatMessages.innerHTML = `
                             <div class="message system">
                                 <strong><i class="fas fa-info-circle"></i> ${I18N.system_message || '系统消息'}</strong><br>
-                                ${I18N.welcome_message || '欢迎使用 OpenCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
+                                ${I18N.welcome_message || '欢迎使用 OfficeCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
                             </div>
                         `;
                     }
@@ -7319,7 +7319,7 @@
             chatMessages.innerHTML = `
                 <div class="message system">
                     <strong><i class="fas fa-info-circle"></i> ${I18N.system_message || '系统消息'}</strong><br>
-                    ${I18N.welcome_message || '欢迎使用 OpenCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
+                    ${I18N.welcome_message || '欢迎使用 OfficeCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
                 </div>
             `;
             
@@ -7369,7 +7369,7 @@
                 chatMessages.innerHTML = `
                     <div class="message system">
                         <strong><i class="fas fa-info-circle"></i> ${I18N.system_message || '系统消息'}</strong><br>
-                        ${I18N.welcome_message || '欢迎使用 OpenCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
+                        ${I18N.welcome_message || '欢迎使用 OfficeCowork！请在下方输入您的需求，系统将自动为您处理任务。'}
                     </div>
                 `;
                 
@@ -15138,7 +15138,7 @@
                             if (data.is_app_mode && 'app_name' in data) {
                                 document.title = data.app_name;
                             } else if (!data.is_app_mode) {
-                                document.title = I18N?.app_title?.replace(' GUI', '') || 'OpenCowork';
+                                document.title = I18N?.app_title?.replace(' GUI', '') || 'OfficeCowork';
                             }
                             
                             // 更新logo标题
@@ -15147,7 +15147,7 @@
                                 if (data.is_app_mode && 'app_name' in data) {
                                     logoTitle.textContent = data.app_name;
                                 } else if (!data.is_app_mode) {
-                                    logoTitle.textContent = I18N?.app_title?.replace(' GUI', '') || 'OpenCowork';
+                                    logoTitle.textContent = I18N?.app_title?.replace(' GUI', '') || 'OfficeCowork';
                                 }
                             }
                             
@@ -15156,11 +15156,11 @@
                             if (headerH1) {
                                 const defaultLogoUrl = '{{ url_for("static", filename="logo.png") }}';
                                 const logoUrl = data.logo_url || defaultLogoUrl;
-                                let titleText = 'OpenCowork';
+                                let titleText = 'OfficeCowork';
                                 if (data.is_app_mode && 'app_name' in data) {
                                     titleText = data.app_name;
                                 } else if (!data.is_app_mode) {
-                                    titleText = I18N?.app_title?.replace(' GUI', '') || 'OpenCowork';
+                                    titleText = I18N?.app_title?.replace(' GUI', '') || 'OfficeCowork';
                                 }
                                 headerH1.innerHTML = '<img src="' + logoUrl + '" style="height: 1.8em; vertical-align: middle;" alt="Logo"> ' + titleText;
                             }

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,21 +15,21 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-OpenCowork Python Library Usage Examples
+OfficeCowork Python Library Usage Examples
 
-This file demonstrates how to use OpenCowork as a Python library instead of 
+This file demonstrates how to use OfficeCowork as a Python library instead of 
 command-line tool. The library provides an OpenAI-like chat interface.
 """
 
-# Import the OpenCowork client
-from src.main import OpenCoworkClient, create_client
+# Import the OfficeCowork client
+from src.main import OfficeCoworkClient, create_client
 
 def example_basic_usage():
     """Basic usage example"""
     print("=== Basic Usage Example ===")
     
     # Initialize the client (will automatically read from config/config.txt)
-    client = OpenCoworkClient(
+    client = OfficeCoworkClient(
         # api_key and model will be read from config/config.txt automatically
         # You can also specify them explicitly: api_key="your_api_key", model="claude-sonnet-4-0"
         debug_mode=False,  # Enable debug logging
@@ -59,7 +59,7 @@ def example_with_continue_mode():
     """Example using continue mode to build upon previous work"""
     print("\n=== Continue Mode Example ===")
     
-    client = OpenCoworkClient(
+    client = OfficeCoworkClient(
         # Will read from config/config.txt automatically
     )
     
@@ -130,7 +130,7 @@ def example_with_custom_mcp_and_prompts():
     """Example using custom MCP configuration and prompts folder"""
     print("\n=== Custom MCP and Prompts Example ===")
     
-    client = OpenCoworkClient(
+    client = OfficeCoworkClient(
         # api_key and model will be read from config/config.txt automatically
         debug_mode=False,
         MCP_config_file="config/specialized_mcp_servers.json",  # Use specialized MCP tools
@@ -140,7 +140,7 @@ def example_with_custom_mcp_and_prompts():
     # This allows you to:
     # 1. Use different MCP server configurations for different projects
     # 2. Use different prompt templates and tool interfaces
-    # 3. Create domain-specific OpenCowork instances (e.g., for data science, web development, etc.)
+    # 3. Create domain-specific OfficeCowork instances (e.g., for data science, web development, etc.)
     
     response = client.chat(
         messages=[
@@ -159,7 +159,7 @@ def example_batch_processing():
     """Example of processing multiple tasks in batch"""
     print("\n=== Batch Processing Example ===")
     
-    client = OpenCoworkClient(
+    client = OfficeCoworkClient(
         # Will read from config/config.txt automatically
     )
     
@@ -195,13 +195,13 @@ def example_batch_processing():
         print(f"{status} Task {i}: {result['task'][:50]}...")
 
 if __name__ == "__main__":
-    print("OpenCowork Python Library Examples")
+    print("OfficeCowork Python Library Examples")
     print("=" * 50)
     
     # Note: Before running these examples, make sure to:
     # 1. Set your API key and model in config/config.txt
     # 2. Install required dependencies
-    # 3. Have the src/ directory with the OpenCowork source code
+    # 3. Have the src/ directory with the OfficeCowork source code
     
     print("ℹ️  Note: These examples will automatically read API key and model from config/config.txt")
     print("   Make sure your config/config.txt file contains valid API_KEY and MODEL settings.")

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -923,18 +923,18 @@ def main():
     optimized_svg, report = optimizer.optimize_svg_with_report(test_svg)
     
     # 保存结果
-    with open('/home/zhenzhi.wu/OpenCowork/test_original.svg', 'w', encoding='utf-8') as f:
+    with open('/home/zhenzhi.wu/OfficeCowork/test_original.svg', 'w', encoding='utf-8') as f:
         f.write(test_svg)
     
-    with open('/home/zhenzhi.wu/OpenCowork/test_optimized.svg', 'w', encoding='utf-8') as f:
+    with open('/home/zhenzhi.wu/OfficeCowork/test_optimized.svg', 'w', encoding='utf-8') as f:
         f.write(optimized_svg)
     
     # 打印报告
     optimizer.print_optimization_report(report)
     
     print(f"\n文件已保存:")
-    print(f"  原始SVG: /home/zhenzhi.wu/OpenCowork/test_original.svg")
-    print(f"  优化后SVG: /home/zhenzhi.wu/OpenCowork/test_optimized.svg")
+    print(f"  原始SVG: /home/zhenzhi.wu/OfficeCowork/test_original.svg")
+    print(f"  优化后SVG: /home/zhenzhi.wu/OfficeCowork/test_optimized.svg")
 
 
 if __name__ == "__main__":

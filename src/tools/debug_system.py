@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from .print_system import print_system, print_current
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -413,7 +413,7 @@ class DebugSystem:
         """Finish operation"""
         if self.enable_execution_tracker and self.execution_stack:
             # 🔧 MULTI-INSTANCE FIX: Disable strict operation name matching in multi-instance/concurrent environments
-            # because multiple OpenCowork instances may share the same debug system, causing execution stack confusion
+            # because multiple OfficeCowork instances may share the same debug system, causing execution stack confusion
             if operation_name and self.execution_stack[-1] != operation_name:
                 # Only record debug log, don't print warning to avoid false positives in normal multi-instance execution
                 self.log_event("operation_mismatch", 

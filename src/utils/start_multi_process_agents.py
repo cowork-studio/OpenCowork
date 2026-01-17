@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Copyright (c) 2025 OpenCowork Research Group.
+Copyright (c) 2025 OfficeCowork Research Group.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ from pathlib import Path
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(script_dir, 'src'))
 
-from src.main import OpenCoworkMain
+from src.main import OfficeCoworkMain
 from src.config_loader import get_api_key, get_model, get_api_base
 
 
@@ -143,8 +143,8 @@ def run_agent(agent_id, output_dir, api_key, model, api_base, debug_mode=False):
         from src.tools.agent_context import set_current_agent_id
         set_current_agent_id(agent_id)
         
-        # 创建OpenCoworkMain实例
-        main_app = OpenCoworkMain(
+        # 创建OfficeCoworkMain实例
+        main_app = OfficeCoworkMain(
             out_dir=output_dir,
             api_key=api_key,
             model=model,

@@ -1,6 +1,6 @@
-# OpenCowork 演示案例
+# OfficeCowork 演示案例
 
-本文档展示了 OpenCowork 在各种任务场景中的能力。每个案例都包含具体的任务描述和生成的输出文件。
+本文档展示了 OfficeCowork 在各种任务场景中的能力。每个案例都包含具体的任务描述和生成的输出文件。
 
 所有示例可在以下链接找到： 
 https://drive.google.com/drive/folders/14SwKNCCUYWODzxjb-DdCzeHo0VdYTSt9?usp=sharing
