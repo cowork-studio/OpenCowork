@@ -28,7 +28,7 @@
 - **⚙️ 无需 Claude Code 作为底层**：从零开始构建的独立架构，Open Cowork 不需要 Claude Code 作为底层依赖，提供更大的灵活性和控制权。
 
 ## 🚀 快速开始
-您可以访问 https://agiagentonline.com/opencoworker 试用！ 
+您可以访问 https://agiagentonline.com/opencowork 试用！ 
 备用地址 http://156.238.255.79:5002
 您可以使用空的 API key 以游客身份登录并体验演示功能。
 您也可以通过手机号登录，开始新的任务。

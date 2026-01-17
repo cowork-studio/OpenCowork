@@ -27,7 +27,7 @@ While Open Cowork offers a similar collaborative AI experience to Claude cowork,
 
 ## Quick start
 
-You can access https://agiagentonline.com/opencoworker to try on Cloud
+You can access https://agiagentonline.com/opencowork to try on Cloud
 backup address http://156.238.255.79:5002
 You can login in Guest account with empty API key to see demos.
 You can also login with your phone number to start a new task.
